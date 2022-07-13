@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:eyecheck_1/home.dart';

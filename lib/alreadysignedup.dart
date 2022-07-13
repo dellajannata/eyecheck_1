@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
+class AlreadySignedUp extends StatefulWidget {
+  const AlreadySignedUp({Key? key}) : super(key: key);
+
   @override
-  _HomePageState createState() => _HomePageState();
+  _AlreadySignedUpState createState() => _AlreadySignedUpState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _AlreadySignedUpState extends State<AlreadySignedUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,25 +17,26 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'assets/img/3.png',
+              height: 200,
+            ),
+            const SizedBox(
+              height: 40,
+            ),
             const Text(
-              'Welcome to Eye Check !',
+              'Already Signed Up !',
               style: TextStyle(
                   fontSize: 35,
-                  color: Colors.blue,
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontFamily: " CabalBold"),
             ),
             const SizedBox(
-              height: 120,
+              height: 70,
             ),
-            ElevatedButton(onPressed: () {}, child: const Text('Get Started')),
-            const SizedBox(
-              height: 50,
-            ),
-            Image.asset(
-              'assets/img/2.png',
-              height: 200,
-            ),
+            ElevatedButton(onPressed: () {}, child: const Text('Yes')),
+            ElevatedButton(onPressed: () {}, child: const Text('No')),
             const SizedBox(
               height: 20,
             ),
