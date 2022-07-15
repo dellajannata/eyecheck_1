@@ -1,3 +1,4 @@
+import 'package:eyecheck_1/alreadysignedup.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -26,7 +27,14 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 120,
             ),
-            ElevatedButton(onPressed: () {}, child: const Text('Get Started')),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) {
+                    return AlreadySignedUp();
+                  }));
+                },
+                child: const Text('Get Started')),
             const SizedBox(
               height: 50,
             ),

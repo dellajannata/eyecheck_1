@@ -41,7 +41,7 @@ class _ChooseTypeState extends State<ChooseType> {
                   children: [
                     Image.asset(
                       'assets/img/a.png',
-                      height: 100,
+                      height: 200,
                     ),
                     const SizedBox(
                       height: 10,
@@ -70,7 +70,7 @@ class _ChooseTypeState extends State<ChooseType> {
                   children: [
                     Image.asset(
                       'assets/img/b.png',
-                      height: 100,
+                      height: 200,
                     ),
                     const SizedBox(
                       height: 10,
@@ -99,7 +99,7 @@ class _ChooseTypeState extends State<ChooseType> {
                   children: [
                     Image.asset(
                       'assets/img/c.png',
-                      height: 100,
+                      height: 200,
                     ),
                     const SizedBox(
                       height: 10,
@@ -128,7 +128,7 @@ class _ChooseTypeState extends State<ChooseType> {
                   children: [
                     Image.asset(
                       'assets/img/d.png',
-                      height: 100,
+                      height: 200,
                     ),
                     const SizedBox(
                       height: 10,
