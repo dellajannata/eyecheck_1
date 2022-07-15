@@ -72,6 +72,8 @@ flutter:
     - assets/img/artikel1.png
     - assets/img/artikel2.png
     - assets/img/artikel3.png
+    - assets/img/google.png
+    - assets/img/facebook.png
     # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

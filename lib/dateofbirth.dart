@@ -32,11 +32,6 @@ class _DateOfBirthState extends State<DateOfBirth> {
             const SizedBox(
               height: 50,
             ),
-            const Text(
-              'Date Of Birth',
-              style: TextStyle(
-                  fontSize: 20, color: Colors.black, fontFamily: " CabalBold"),
-            ),
             const SizedBox(
               height: 10,
             ),
@@ -45,10 +40,6 @@ class _DateOfBirthState extends State<DateOfBirth> {
                 border: const OutlineInputBorder(),
                 focusedBorder: const OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.blue),
-                ),
-                prefixIcon: Icon(
-                  Icons.abc,
-                  size: 60,
                 ),
                 hintText: "Masukkan Tanggal Lahir",
                 hintStyle: const TextStyle(color: Colors.black),
