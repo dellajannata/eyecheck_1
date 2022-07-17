@@ -1,3 +1,4 @@
+import 'package:eyecheck_1/ChooseDataDiri.dart';
 import 'package:flutter/material.dart';
 
 class DateOfBirth extends StatefulWidget {
@@ -61,7 +62,12 @@ class _DateOfBirthState extends State<DateOfBirth> {
                 width: 250,
                 child: InkWell(
                   splashColor: Colors.white,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) {
+                      return SignupPage();
+                    }));
+                  },
                   child: const Center(
                     child: Text(
                       "Masuk",

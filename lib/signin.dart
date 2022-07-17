@@ -1,5 +1,6 @@
 // ignore_for_file: empty_statements
 
+import 'package:eyecheck_1/halamanutama.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatefulWidget {
@@ -95,7 +96,12 @@ class _SignInState extends State<SignIn> {
               width: 250,
               child: InkWell(
                 splashColor: Colors.white,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) {
+                    return HomePasien();
+                  }));
+                },
                 child: const Center(
                   child: Text(
                     "Sign In",

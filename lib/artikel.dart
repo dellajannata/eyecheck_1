@@ -25,17 +25,34 @@ class _ArtikelState extends State<Artikel> {
       appBar: AppBar(
         title: Text("Eye Check"),
       ),
-      body: Center(
-        //   child:
-        //    TextFiled(
-        //     Decoration: InputDecoration(
-        //       prefixIcon: Icon(Icons.search, size: 18),
-        //       border: OutlineInputBorder(
-        //         borderRadius: BorderRadius.circular(10),
-        //       ),
-        //       hintText: 'Search',
-        //     ),
-        child: ListView(
+      body: Column(children: [
+        Text(
+          "Artikel",
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(
+          height: 40,
+        ),
+        TextField(
+          cursorColor: Colors.grey,
+          decoration: InputDecoration(
+              fillColor: Colors.grey,
+              filled: true,
+              border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                  borderSide: BorderSide.none),
+              hintText: 'Search',
+              hintStyle: TextStyle(color: Colors.white, fontSize: 18),
+              prefixIcon: Container(
+                padding: EdgeInsets.all(15),
+                child: Icon(Icons.search),
+                width: 18,
+              )),
+        ),
+        ListView(
           children: [
             ListTile(
               leading: Container(
@@ -115,8 +132,7 @@ class _ArtikelState extends State<Artikel> {
         //   //agar bottom navigation tidak bergerak saat diklik
         //   type: BottomNavigationBarType.fixed,
         // ),
-      ),
-      // ),
+      ]),
     );
   }
 }

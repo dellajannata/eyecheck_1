@@ -24,7 +24,7 @@ class _ProfileEdit2State extends State<ProfileEdit2> {
       } else if (index == 1) {
         _currentMenu = 'Article';
       } else if (index == 2) {
-        _currentMenu = 'Test Eye';
+        _currentMenu = 'Eye Test';
       } else if (index == 3) {
         _currentMenu = 'History';
       } else if (index == 4) {
@@ -193,7 +193,7 @@ class _ProfileEdit2State extends State<ProfileEdit2> {
           BottomNavigationBarItem(
               icon: Icon(Icons.newspaper), label: 'Article'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.visibility), label: 'Test Eye'),
+              icon: Icon(Icons.visibility), label: 'Eye Test'),
           BottomNavigationBarItem(
               icon: Icon(Icons.calendar_month), label: 'History'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Account'),

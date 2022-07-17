@@ -1,3 +1,5 @@
+import 'package:eyecheck_1/halamanutama.dart';
+import 'package:eyecheck_1/signin.dart';
 import 'package:flutter/material.dart';
 
 class SignupPage extends StatefulWidget {
@@ -156,7 +158,12 @@ class _SignupPageState extends State<SignupPage> {
                         child: MaterialButton(
                           minWidth: double.infinity,
                           height: 60,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushReplacement(context,
+                                MaterialPageRoute(builder: (context) {
+                              return SignIn();
+                            }));
+                          },
                           color: Colors.blue,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(40)),

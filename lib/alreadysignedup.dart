@@ -1,3 +1,5 @@
+import 'package:eyecheck_1/gender.dart';
+import 'package:eyecheck_1/home.dart';
 import 'package:flutter/material.dart';
 
 class AlreadySignedUp extends StatefulWidget {
@@ -37,11 +39,25 @@ class _AlreadySignedUpState extends State<AlreadySignedUp> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(onPressed: () {}, child: const Text('Yes')),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) {
+                        return Gender();
+                      }));
+                    },
+                    child: const Text('Yes')),
                 const SizedBox(
                   width: 20,
                 ),
-                ElevatedButton(onPressed: () {}, child: const Text('No')),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) {
+                        return HomePage();
+                      }));
+                    },
+                    child: const Text('No')),
                 const SizedBox(
                   height: 20,
                 ),
