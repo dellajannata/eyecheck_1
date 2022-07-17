@@ -1,3 +1,4 @@
+import 'package:eyecheck_1/tesmataletter1.dart';
 import 'package:flutter/material.dart';
 
 class CloseEyeLeft extends StatefulWidget {
@@ -42,7 +43,12 @@ class _CloseEyeLeftState extends State<CloseEyeLeft> {
                 width: 250,
                 child: InkWell(
                   splashColor: Colors.white,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) {
+                      return TestMataLetter1();
+                    }));
+                  },
                   child: const Center(
                     child: Text(
                       "Next",
