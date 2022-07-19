@@ -1,3 +1,4 @@
+import 'package:eyecheck_1/distance1.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.Dart';
 import 'dart:async';
@@ -64,7 +65,12 @@ class _ChooseEyeState extends State<ChooseEye> {
                   width: 300,
                   height: 50,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) {
+                        return Distance1();
+                      }));
+                    },
                     child: const Text(
                       'Confirmasi',
                       style: TextStyle(fontSize: 24),

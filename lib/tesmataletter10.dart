@@ -1,4 +1,6 @@
+import 'package:eyecheck_1/hasiltesmataletter10.dart';
 import 'package:flutter/material.Dart';
+import 'package:flutter/material.dart';
 
 class TestMataLetter9 extends StatefulWidget {
   const TestMataLetter9({Key? key}) : super(key: key);
@@ -34,10 +36,11 @@ class _TestMataLetter9State extends State<TestMataLetter9> {
                     height: 100,
                     child: ElevatedButton(
                       onPressed: () {},
-                      style: ElevatedButton.styleFrom(primary: Colors.grey),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'F',
-                        style: TextStyle(fontSize: 24, color: Colors.black),
+                        style: TextStyle(fontSize: 1.1, color: Colors.black),
                       ),
                     ),
                   ),
@@ -56,10 +59,11 @@ class _TestMataLetter9State extends State<TestMataLetter9> {
                     height: 100,
                     child: ElevatedButton(
                       onPressed: () {},
-                      style: ElevatedButton.styleFrom(primary: Colors.grey),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'P',
-                        style: TextStyle(fontSize: 24, color: Colors.black),
+                        style: TextStyle(fontSize: 1.1, color: Colors.black),
                       ),
                     ),
                   ),
@@ -71,11 +75,17 @@ class _TestMataLetter9State extends State<TestMataLetter9> {
                     width: 100,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(primary: Colors.grey),
+                      onPressed: () {
+                        Navigator.pushReplacement(context,
+                            MaterialPageRoute(builder: (context) {
+                          return HasilTestMataLetter10();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'F',
-                        style: TextStyle(fontSize: 24, color: Colors.black),
+                        style: TextStyle(fontSize: 1.1, color: Colors.black),
                       ),
                     ),
                   ),
@@ -94,10 +104,11 @@ class _TestMataLetter9State extends State<TestMataLetter9> {
                     height: 100,
                     child: ElevatedButton(
                       onPressed: () {},
-                      style: ElevatedButton.styleFrom(primary: Colors.grey),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'T',
-                        style: TextStyle(fontSize: 24, color: Colors.black),
+                        style: TextStyle(fontSize: 1.1, color: Colors.black),
                       ),
                     ),
                   ),
@@ -110,31 +121,17 @@ class _TestMataLetter9State extends State<TestMataLetter9> {
                     height: 100,
                     child: ElevatedButton(
                       onPressed: () {},
-                      style: ElevatedButton.styleFrom(primary: Colors.grey),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'L',
-                        style: TextStyle(fontSize: 24, color: Colors.black),
+                        style: TextStyle(fontSize: 1.1, color: Colors.black),
                       ),
                     ),
                   ),
                 ),
                 SizedBox(height: 150),
               ]),
-            ),
-            SizedBox(height: 60),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(12),
-              child: SizedBox(
-                width: 300,
-                height: 50,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text(
-                    'Next',
-                    style: TextStyle(fontSize: 24),
-                  ),
-                ),
-              ),
             ),
           ]),
         ));

@@ -74,6 +74,20 @@ flutter:
     - assets/img/artikel3.png
     - assets/img/google.png
     - assets/img/facebook.png
+    - assets/img/t1.png
+    - assets/img/t2.png
+    - assets/img/t3.png
+    - assets/img/t4.png
+    - assets/img/t5.png
+    - assets/img/t6.png
+    - assets/img/t7.png
+    - assets/img/t12.png
+    - assets/img/t22.png
+    - assets/img/t32.png
+    - assets/img/t42.png
+    - assets/img/t52.png
+    - assets/img/t62.png
+    - assets/img/t72.png
     # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
