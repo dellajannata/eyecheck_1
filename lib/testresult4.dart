@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class TestResult1 extends StatefulWidget {
-  const TestResult1({Key? key}) : super(key: key);
+class TestResult4 extends StatefulWidget {
+  const TestResult4({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _TestResult1State createState() => _TestResult1State();
+  _TestResult4State createState() => _TestResult4State();
 }
 
-class _TestResult1State extends State<TestResult1> {
+class _TestResult4State extends State<TestResult4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

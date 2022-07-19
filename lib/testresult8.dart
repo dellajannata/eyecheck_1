@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class TestResult5 extends StatefulWidget {
-  const TestResult5({Key? key}) : super(key: key);
+class TestResult8 extends StatefulWidget {
+  const TestResult8({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _TestResult5State createState() => _TestResult5State();
+  _TestResult8State createState() => _TestResult8State();
 }
 
-class _TestResult5State extends State<TestResult5> {
+class _TestResult8State extends State<TestResult8> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,14 +30,14 @@ class _TestResult5State extends State<TestResult5> {
               height: 50,
             ),
             Image.asset(
-              'assets/img/t5.png',
+              'assets/img/t8.png',
               height: 200,
             ),
             const SizedBox(
               height: 40,
             ),
             Image.asset(
-              'assets/img/t52.png',
+              'assets/img/t82.png',
               height: 200,
             ),
             const SizedBox(

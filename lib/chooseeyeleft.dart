@@ -1,5 +1,3 @@
-import 'package:eyecheck_1/chooseeyeleft.dart';
-import 'package:eyecheck_1/chooseeyeright.dart';
 import 'package:eyecheck_1/distance1.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.Dart';
@@ -7,15 +5,15 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class ChooseEye extends StatefulWidget {
-  const ChooseEye({Key? key}) : super(key: key);
+class ChooseEyeLeft extends StatefulWidget {
+  const ChooseEyeLeft({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _ChooseEyeState createState() => _ChooseEyeState();
+  _ChooseEyeLeftState createState() => _ChooseEyeLeftState();
 }
 
-class _ChooseEyeState extends State<ChooseEye> {
+class _ChooseEyeLeftState extends State<ChooseEyeLeft> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,14 +35,8 @@ class _ChooseEyeState extends State<ChooseEye> {
                       width: 130,
                       height: 50,
                       child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.pushReplacement(context,
-                              MaterialPageRoute(builder: (context) {
-                            return ChooseEyeRight();
-                          }));
-                        },
-                        style: ElevatedButton.styleFrom(
-                            primary: Colors.white, onPrimary: Colors.blue),
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(primary: Colors.white),
                         child: const Text(
                           'Right',
                           style: TextStyle(fontSize: 24, color: Colors.black),
@@ -59,22 +51,35 @@ class _ChooseEyeState extends State<ChooseEye> {
                       width: 130,
                       height: 50,
                       child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.pushReplacement(context,
-                              MaterialPageRoute(builder: (context) {
-                            return ChooseEyeLeft();
-                          }));
-                        },
-                        style: ElevatedButton.styleFrom(
-                            primary: Colors.white, onPrimary: Colors.blue),
+                        onPressed: () {},
                         child: const Text(
                           'Left',
-                          style: TextStyle(fontSize: 24, color: Colors.black),
+                          style: TextStyle(fontSize: 24),
                         ),
                       ),
                     ),
                   ),
                 ]),
+              ),
+              SizedBox(height: 60),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(12),
+                child: SizedBox(
+                  width: 300,
+                  height: 50,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) {
+                        return Distance1();
+                      }));
+                    },
+                    child: const Text(
+                      'Confirmasi',
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ),
+                ),
               ),
               // bottomNavigationBar: BottomNavigationBar(
               //   //membuat item navigasi

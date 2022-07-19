@@ -1,26 +1,25 @@
-import 'package:eyecheck_1/closeeyeleft.dart';
+import 'package:eyecheck_1/closeeyeright.dart';
 import 'package:flutter/material.Dart';
 import 'dart:async';
 
-class Distance3 extends StatefulWidget {
-  const Distance3({Key? key}) : super(key: key);
+class Distance3Right extends StatefulWidget {
+  const Distance3Right({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _Distance3State createState() => _Distance3State();
+  _Distance3RightState createState() => _Distance3RightState();
 }
 
-class _Distance3State extends State<Distance3> {
+class _Distance3RightState extends State<Distance3Right> {
   @override
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 4), () {
       Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (_) => CloseEyeLeft()));
+          .pushReplacement(MaterialPageRoute(builder: (_) => CloseEyeRight()));
     });
   }
 
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:

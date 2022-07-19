@@ -1,4 +1,4 @@
-import 'package:eyecheck_1/hasiltesmataletter10.dart';
+import 'package:eyecheck_1/testresult9.dart';
 import 'package:flutter/material.Dart';
 import 'package:flutter/material.dart';
 
@@ -51,7 +51,7 @@ class _HasilTestMataLetter9State extends State<HasilTestMataLetter9> {
                   onPressed: () {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) {
-                      return HasilTestMataLetter10();
+                      return TestResult9();
                     }));
                   },
                   child: const Text(

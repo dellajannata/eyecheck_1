@@ -1,4 +1,4 @@
-import 'package:eyecheck_1/testresult1.dart';
+import 'package:eyecheck_1/splashscreen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -10,8 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       // debugShowCheckedModeBanner: false,
-      // home: SplashScreen(),
-      home: TestResult1(),
+      home: SplashScreen(),
     );
   }
 }

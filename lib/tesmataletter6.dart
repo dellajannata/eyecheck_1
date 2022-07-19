@@ -1,4 +1,5 @@
 import 'package:eyecheck_1/hasiltesmataletter6.dart';
+import 'package:eyecheck_1/testresult6.dart';
 import 'package:flutter/material.Dart';
 
 class TestMataLetter6 extends StatefulWidget {
@@ -79,7 +80,12 @@ class _TestMataLetter6State extends State<TestMataLetter6> {
                     width: 100,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(context,
+                            MaterialPageRoute(builder: (context) {
+                          return TestResult6();
+                        }));
+                      },
                       style: ElevatedButton.styleFrom(
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
@@ -102,7 +108,12 @@ class _TestMataLetter6State extends State<TestMataLetter6> {
                     width: 100,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(context,
+                            MaterialPageRoute(builder: (context) {
+                          return TestResult6();
+                        }));
+                      },
                       style: ElevatedButton.styleFrom(
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
@@ -119,7 +130,12 @@ class _TestMataLetter6State extends State<TestMataLetter6> {
                     width: 100,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(context,
+                            MaterialPageRoute(builder: (context) {
+                          return TestResult6();
+                        }));
+                      },
                       style: ElevatedButton.styleFrom(
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
