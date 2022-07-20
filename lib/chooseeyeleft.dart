@@ -61,7 +61,7 @@ class _ChooseEyeLeftState extends State<ChooseEyeLeft> {
                   ),
                 ]),
               ),
-              SizedBox(height: 60),
+              SizedBox(height: 150),
               ClipRRect(
                 borderRadius: BorderRadius.circular(12),
                 child: SizedBox(

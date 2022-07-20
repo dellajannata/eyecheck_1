@@ -19,13 +19,13 @@ class _GenderState extends State<Gender> {
         body: Center(
           child: Column(
             children: <Widget>[
-              SizedBox(height: 50),
+              SizedBox(height: 100),
               const Text('Choose Gender',
                   style: TextStyle(
                     fontSize: 35,
                     fontWeight: FontWeight.bold,
                   )),
-              SizedBox(height: 100),
+              SizedBox(height: 150),
               Center(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -65,7 +65,7 @@ class _GenderState extends State<Gender> {
                   ],
                 ),
               ),
-              SizedBox(height: 100),
+              SizedBox(height: 150),
               ClipRRect(
                 borderRadius: BorderRadius.circular(12),
                 child: SizedBox(

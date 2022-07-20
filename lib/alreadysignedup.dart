@@ -39,25 +39,47 @@ class _AlreadySignedUpState extends State<AlreadySignedUp> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (context) {
-                        return Gender();
-                      }));
-                    },
-                    child: const Text('Yes')),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: SizedBox(
+                    width: 150,
+                    height: 50,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushReplacement(context,
+                            MaterialPageRoute(builder: (context) {
+                          return Gender();
+                        }));
+                      },
+                      child: const Text(
+                        'Yes',
+                        style: TextStyle(fontSize: 18),
+                      ),
+                    ),
+                  ),
+                ),
                 const SizedBox(
                   width: 20,
                 ),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (context) {
-                        return HomePage();
-                      }));
-                    },
-                    child: const Text('No')),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: SizedBox(
+                    width: 150,
+                    height: 50,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushReplacement(context,
+                            MaterialPageRoute(builder: (context) {
+                          return HomePage();
+                        }));
+                      },
+                      child: const Text(
+                        'No',
+                        style: TextStyle(fontSize: 18),
+                      ),
+                    ),
+                  ),
+                ),
                 const SizedBox(
                   height: 20,
                 ),

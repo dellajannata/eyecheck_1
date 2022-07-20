@@ -27,9 +27,10 @@ class _Distance1RightState extends State<Distance1Right> {
           AppBar(backgroundColor: Colors.blue, title: const Text("Eye Check")),
       body: Center(
         child: Column(children: <Widget>[
-          SizedBox(height: 30),
-          const Text('Distance', style: TextStyle(fontSize: 28)),
-          SizedBox(height: 30),
+          SizedBox(height: 90),
+          const Text('Distance',
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+          SizedBox(height: 150),
           ClipRRect(
             //   borderRadius: BorderRadius.circular(100),
             child: SizedBox(

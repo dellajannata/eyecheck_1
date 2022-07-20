@@ -1,3 +1,4 @@
+import 'package:eyecheck_1/halamanutama.dart';
 import 'package:flutter/material.dart';
 
 class TestResult9 extends StatefulWidget {
@@ -49,9 +50,14 @@ class _TestResult9State extends State<TestResult9> {
                 width: 300,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) {
+                      return HomePasien();
+                    }));
+                  },
                   child: const Text(
-                    'Got It',
+                    'Finish',
                     style: TextStyle(fontSize: 24),
                   ),
                 ),

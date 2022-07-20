@@ -27,14 +27,25 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 120,
             ),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) {
-                    return AlreadySignedUp();
-                  }));
-                },
-                child: const Text('Get Started')),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: SizedBox(
+                width: 150,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) {
+                      return AlreadySignedUp();
+                    }));
+                  },
+                  child: const Text(
+                    'Get Started',
+                    style: TextStyle(fontSize: 18),
+                  ),
+                ),
+              ),
+            ),
             const SizedBox(
               height: 50,
             ),

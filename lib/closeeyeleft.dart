@@ -12,7 +12,7 @@ class _CloseEyeLeftState extends State<CloseEyeLeft> {
   @override
   Widget build(BuildContext Context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Color.fromARGB(255, 1, 127, 231),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -35,25 +35,21 @@ class _CloseEyeLeftState extends State<CloseEyeLeft> {
             const SizedBox(
               height: 80,
             ),
-            Card(
-              color: Color.fromARGB(255, 17, 134, 231),
-              elevation: 5,
-              child: Container(
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: SizedBox(
+                width: 300,
                 height: 50,
-                width: 250,
-                child: InkWell(
-                  splashColor: Colors.white,
-                  onTap: () {
+                child: ElevatedButton(
+                  onPressed: () {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) {
                       return TestMataLetter1();
                     }));
                   },
-                  child: const Center(
-                    child: Text(
-                      "Next",
-                      style: TextStyle(fontSize: 20, color: Colors.white),
-                    ),
+                  child: const Text(
+                    'Next',
+                    style: TextStyle(fontSize: 24),
                   ),
                 ),
               ),

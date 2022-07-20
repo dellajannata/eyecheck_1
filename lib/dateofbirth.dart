@@ -31,10 +31,7 @@ class _DateOfBirthState extends State<DateOfBirth> {
                   fontFamily: " CabalBold"),
             ),
             const SizedBox(
-              height: 50,
-            ),
-            const SizedBox(
-              height: 10,
+              height: 150,
             ),
             TextFormField(
               decoration: InputDecoration(
@@ -48,31 +45,37 @@ class _DateOfBirthState extends State<DateOfBirth> {
                 labelStyle: const TextStyle(color: Colors.black),
               ),
             ),
+            OutlinedButton(
+                onPressed: () {
+                  showDatePicker(
+                    context: context,
+                    initialDate: DateTime.now(),
+                    firstDate: DateTime(1970),
+                    lastDate: DateTime(2030),
+                  );
+                },
+                child: const Text("Date")),
             const SizedBox(
               height: 20,
             ),
             SizedBox(
               height: 250,
             ),
-            Card(
-              color: Colors.blue,
-              elevation: 5,
-              child: Container(
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: SizedBox(
+                width: 150,
                 height: 50,
-                width: 250,
-                child: InkWell(
-                  splashColor: Colors.white,
-                  onTap: () {
+                child: ElevatedButton(
+                  onPressed: () {
                     Navigator.pushReplacement(context,
                         MaterialPageRoute(builder: (context) {
                       return SignupPage();
                     }));
                   },
-                  child: const Center(
-                    child: Text(
-                      "Masuk",
-                      style: TextStyle(fontSize: 20, color: Colors.white),
-                    ),
+                  child: const Text(
+                    'Masuk',
+                    style: TextStyle(fontSize: 18),
                   ),
                 ),
               ),

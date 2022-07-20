@@ -88,24 +88,35 @@ class _SignInState extends State<SignIn> {
           SizedBox(
             height: 50,
           ),
-          Card(
-            color: Colors.blue,
-            elevation: 5,
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 40),
             child: Container(
-              height: 50,
-              width: 250,
-              child: InkWell(
-                splashColor: Colors.white,
-                onTap: () {
+              padding: EdgeInsets.only(top: 3, left: 3),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(40),
+                  border: Border(
+                      bottom: BorderSide(color: Colors.black),
+                      top: BorderSide(color: Colors.black),
+                      right: BorderSide(color: Colors.black),
+                      left: BorderSide(color: Colors.black))),
+              child: MaterialButton(
+                minWidth: double.infinity,
+                height: 60,
+                onPressed: () {
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) {
                     return HomePasien();
                   }));
                 },
-                child: const Center(
-                  child: Text(
-                    "Sign In",
-                    style: TextStyle(fontSize: 20, color: Colors.white),
+                color: Colors.blue,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40)),
+                child: Text(
+                  "Sign In",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                    color: Colors.white,
                   ),
                 ),
               ),
