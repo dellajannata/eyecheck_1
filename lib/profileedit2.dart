@@ -1,3 +1,8 @@
+import 'package:eyecheck_1/MyHeaderDrawer.dart';
+import 'package:eyecheck_1/artikel.dart';
+import 'package:eyecheck_1/choosetype.dart';
+import 'package:eyecheck_1/halamanutama.dart';
+import 'package:eyecheck_1/profileedit.dart';
 import 'package:flutter/material.dart';
 import 'package:eyecheck_1/ChooseDataDiri.dart';
 
@@ -9,77 +14,24 @@ class ProfileEdit2 extends StatefulWidget {
 }
 
 class _ProfileEdit2State extends State<ProfileEdit2> {
-  //inisialisasi variabel
-  int _currentIndex = 0;
-  String _currentMenu = 'Account';
-  bool isChecked = false;
-
-  //metod ini akan dijalankna saat diklik
-  void _changeSelectedNavBar(int index) {
-    setState(() {
-      _currentIndex = index;
-
-      if (index == 0) {
-        _currentMenu = 'Home';
-      } else if (index == 1) {
-        _currentMenu = 'Article';
-      } else if (index == 2) {
-        _currentMenu = 'Eye Test';
-      } else if (index == 3) {
-        _currentMenu = 'History';
-      } else if (index == 4) {
-        _currentMenu = 'Account';
-      }
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text("Bottom Navigation"),
-      // ),
-      // body: Center(
-      //   child: Column(
-      //     mainAxisAlignment: MainAxisAlignment.center,
-      //     crossAxisAlignment: CrossAxisAlignment.start,
-      //     children: [
-      //       // HomePasien(),
-      //       Text(
-      //         "Menu yang Aktif",
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //       SizedBox(height: 5,),
-      //       Text(
-      //         "Index: "+_currentIndex.toString(),
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //       SizedBox(height: 5,),
-      //       Text(
-      //         "Menu: "+_currentMenu,
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //     ],
-      //   ),
-      // ),
-      resizeToAvoidBottomInset: false,
-      // resizeToAvoidBottomPadding: false,
-      backgroundColor: Colors.white,
       appBar: AppBar(
-        elevation: 0,
-        brightness: Brightness.light,
-        backgroundColor: Colors.white,
-        leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(
-              Icons.arrow_back_ios,
-              size: 20,
-              color: Colors.black,
-            )),
-      ),
-
+          backgroundColor: Colors.blue,
+          title: const Text("Eye Check"),
+          leading: IconButton(
+              onPressed: () {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) {
+                  return ProfileEdit();
+                }));
+              },
+              icon: Icon(
+                Icons.arrow_back_ios,
+                size: 20,
+                color: Colors.black,
+              ))),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -90,6 +42,9 @@ class _ProfileEdit2State extends State<ProfileEdit2> {
               children: [
                 Column(
                   children: [
+                    SizedBox(
+                      height: 40,
+                    ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -102,7 +57,6 @@ class _ProfileEdit2State extends State<ProfileEdit2> {
                         //   fontSize: 15,
                         //   color: Colors.grey[700],
                         // ),),
-
                         Text(
                           "Edit Profile",
                           style: TextStyle(
@@ -151,12 +105,64 @@ class _ProfileEdit2State extends State<ProfileEdit2> {
                       padding: EdgeInsets.symmetric(horizontal: 40),
                       child: Column(
                         children: [
-                          makeInput(label: "Username"),
-                          makeInput(label: "Email"),
-                          makeInput(label: "Gender"),
-                          makeInput(label: "Date Of Birth"),
-                          // makeInput(label: "Password",obsureText: true),
-                          makeInput(label: "Password", obsureText: true),
+                          TextFormField(
+                            decoration: InputDecoration(
+                              border: const OutlineInputBorder(),
+                              focusedBorder: const OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.blue),
+                              ),
+                              hintText: "Masukkan Username",
+                              hintStyle: const TextStyle(color: Colors.black),
+                              labelText: "Username",
+                              labelStyle: const TextStyle(color: Colors.black),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          TextFormField(
+                            decoration: InputDecoration(
+                              border: const OutlineInputBorder(),
+                              focusedBorder: const OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.blue),
+                              ),
+                              hintText: "Masukkan E-mail",
+                              hintStyle: const TextStyle(color: Colors.black),
+                              labelText: "E-mail",
+                              labelStyle: const TextStyle(color: Colors.black),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          TextFormField(
+                            decoration: InputDecoration(
+                              border: const OutlineInputBorder(),
+                              focusedBorder: const OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.blue),
+                              ),
+                              hintText: "Masukkan Jenis Kelamin",
+                              hintStyle: const TextStyle(color: Colors.black),
+                              labelText: "Gender",
+                              labelStyle: const TextStyle(color: Colors.black),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          TextFormField(
+                            obscureText: true,
+                            decoration: InputDecoration(
+                              border: const OutlineInputBorder(),
+                              focusedBorder: const OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.blue),
+                              ),
+                              hintText: "Masukkan Password",
+                              hintStyle: const TextStyle(color: Colors.black),
+                              labelText: "Password",
+                              labelStyle: const TextStyle(color: Colors.black),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -169,7 +175,12 @@ class _ProfileEdit2State extends State<ProfileEdit2> {
                         width: 500,
                         height: 50,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushReplacement(context,
+                                MaterialPageRoute(builder: (context) {
+                              return ProfileEdit();
+                            }));
+                          },
                           child: const Text(
                             'Update',
                             style: TextStyle(fontSize: 24),
@@ -183,33 +194,6 @@ class _ProfileEdit2State extends State<ProfileEdit2> {
             ),
           ),
         ),
-      ),
-
-      //membuat bottom navigation
-      bottomNavigationBar: BottomNavigationBar(
-        //membuat item navigasi
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.newspaper), label: 'Article'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.visibility), label: 'Eye Test'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_month), label: 'History'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Account'),
-        ],
-
-        //currentindex mengikuti baris item bottom navigasi yang diklik
-        currentIndex: _currentIndex,
-
-        //warna saat item diklik
-        selectedItemColor: Colors.blue,
-
-        //metode yang dijalankan saat ditap
-        onTap: _changeSelectedNavBar,
-
-        //agar bottom navigation tidak bergerak saat diklik
-        type: BottomNavigationBarType.fixed,
       ),
     );
   }

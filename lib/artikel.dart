@@ -1,3 +1,7 @@
+import 'package:eyecheck_1/MyHeaderDrawer.dart';
+import 'package:eyecheck_1/choosetype.dart';
+import 'package:eyecheck_1/halamanutama.dart';
+import 'package:eyecheck_1/profileedit.dart';
 import 'package:flutter/material.dart';
 
 class Artikel extends StatefulWidget {
@@ -22,9 +26,64 @@ class _ArtikelState extends State<Artikel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Eye Check"),
-      ),
+      appBar:
+          AppBar(backgroundColor: Colors.blue, title: const Text("Eye Check")),
+      drawer: Drawer(
+          child: SingleChildScrollView(
+        child: Column(children: [
+          const MyHeaderDrawer(),
+          ListTile(
+            leading: const Icon(Icons.home),
+            title: Text("Home"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return HomePasien();
+              }));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.article),
+            title: Text("Article"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return Artikel();
+              }));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.abc),
+            title: Text("Eye Test"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return ChooseType();
+              }));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.history),
+            title: Text("History"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return HomePasien();
+              }));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.account_balance),
+            title: Text("Account"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return ProfileEdit();
+              }));
+            },
+          ),
+        ]),
+      )),
       body: Column(children: [
         Text(
           "Artikel",

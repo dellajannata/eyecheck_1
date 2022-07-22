@@ -1,4 +1,5 @@
 import 'package:eyecheck_1/ChooseDataDiri.dart';
+import 'package:eyecheck_1/gender.dart';
 import 'package:flutter/material.dart';
 
 class DateOfBirth extends StatefulWidget {
@@ -12,8 +13,21 @@ class _DateOfBirthState extends State<DateOfBirth> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:
-          AppBar(backgroundColor: Colors.blue, title: const Text("Eye Check")),
+      appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: const Text("Eye Check"),
+          leading: IconButton(
+              onPressed: () {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) {
+                  return Gender();
+                }));
+              },
+              icon: Icon(
+                Icons.arrow_back_ios,
+                size: 20,
+                color: Colors.black,
+              ))),
       body: Container(
         padding: const EdgeInsets.all(8),
         color: Colors.white,
@@ -55,11 +69,8 @@ class _DateOfBirthState extends State<DateOfBirth> {
                   );
                 },
                 child: const Text("Date")),
-            const SizedBox(
-              height: 20,
-            ),
             SizedBox(
-              height: 250,
+              height: 200,
             ),
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
@@ -74,7 +85,7 @@ class _DateOfBirthState extends State<DateOfBirth> {
                     }));
                   },
                   child: const Text(
-                    'Masuk',
+                    'Next',
                     style: TextStyle(fontSize: 18),
                   ),
                 ),

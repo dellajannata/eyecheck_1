@@ -1,5 +1,5 @@
 import 'package:eyecheck_1/gender.dart';
-import 'package:eyecheck_1/home.dart';
+import 'package:eyecheck_1/signin.dart';
 import 'package:flutter/material.dart';
 
 class AlreadySignedUp extends StatefulWidget {
@@ -70,7 +70,7 @@ class _AlreadySignedUpState extends State<AlreadySignedUp> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return HomePage();
+                          return SignIn();
                         }));
                       },
                       child: const Text(

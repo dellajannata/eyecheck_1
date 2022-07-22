@@ -1,6 +1,11 @@
+import 'package:eyecheck_1/artikel.dart';
 import 'package:eyecheck_1/chooseeye.dart';
+import 'package:eyecheck_1/choosetype.dart';
+import 'package:eyecheck_1/profileedit.dart';
+import 'package:eyecheck_1/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:eyecheck_1/ChooseDataDiri.dart';
+import 'package:eyecheck_1/MyHeaderDrawer.dart';
 
 class HomePasien extends StatefulWidget {
   const HomePasien({Key? key}) : super(key: key);
@@ -10,77 +15,67 @@ class HomePasien extends StatefulWidget {
 }
 
 class _HomePasienState extends State<HomePasien> {
-  //inisialisasi variabel
-  int _currentIndex = 0;
-  String _currentMenu = 'Account';
-  bool isChecked = false;
-
-  //metod ini akan dijalankna saat diklik
-  void _changeSelectedNavBar(int index) {
-    setState(() {
-      _currentIndex = index;
-
-      if (index == 0) {
-        _currentMenu = 'Home';
-      } else if (index == 1) {
-        _currentMenu = 'Article';
-      } else if (index == 2) {
-        _currentMenu = 'Eye Test';
-      } else if (index == 3) {
-        _currentMenu = 'History';
-      } else if (index == 4) {
-        _currentMenu = 'Account';
-      }
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text("Bottom Navigation"),
-      // ),
-      // body: Center(
-      //   child: Column(
-      //     mainAxisAlignment: MainAxisAlignment.center,
-      //     crossAxisAlignment: CrossAxisAlignment.start,
-      //     children: [
-      //       // HomePasien(),
-      //       Text(
-      //         "Menu yang Aktif",
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //       SizedBox(height: 5,),
-      //       Text(
-      //         "Index: "+_currentIndex.toString(),
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //       SizedBox(height: 5,),
-      //       Text(
-      //         "Menu: "+_currentMenu,
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //     ],
-      //   ),
-      // ),
-      resizeToAvoidBottomInset: false,
-      // resizeToAvoidBottomPadding: false,
-      backgroundColor: Colors.white,
-      // appBar: AppBar(
-      //   elevation: 0,
-      //   brightness: Brightness.light,
-      //   backgroundColor: Colors.white,
-      //   leading: IconButton(
-      //       onPressed: () {
-      //         Navigator.pop(context);
-      //       },
-      //       icon: Icon(
-      //         Icons.arrow_back_ios,
-      //         size: 20,
-      //         color: Colors.black,
-      //       )),
-      // ),
-
+      appBar:
+          AppBar(backgroundColor: Colors.blue, title: const Text("Eye Check")),
+      drawer: Drawer(
+          child: SingleChildScrollView(
+        child: Column(children: [
+          const MyHeaderDrawer(),
+          ListTile(
+            leading: const Icon(Icons.home),
+            title: Text("Home"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return HomePasien();
+              }));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.article),
+            title: Text("Article"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return Artikel();
+              }));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.abc),
+            title: Text("Eye Test"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return ChooseType();
+              }));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.history),
+            title: Text("History"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return HomePasien();
+              }));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.account_balance),
+            title: Text("Account"),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return ProfileEdit();
+              }));
+            },
+          ),
+        ]),
+      )),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -89,23 +84,6 @@ class _HomePasienState extends State<HomePasien> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Column(
-                //   children: [
-                //     Column(
-                //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                //       children: [
-                // Text ("Sign up", style: TextStyle(
-                //   fontSize: 30,
-                //   fontWeight: FontWeight.bold,
-                // ),),
-                // SizedBox(height: 20,),
-                // Text("Create an Account,Its free",style: TextStyle(
-                //   fontSize: 15,
-                //   color: Colors.grey[700],
-                // ),),
-                // SizedBox(
-                //   width: 100,
-                // ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 40),
                   child: Column(
@@ -141,7 +119,12 @@ class _HomePasienState extends State<HomePasien> {
                               width: 80,
                               height: 80,
                               child: OutlinedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushReplacement(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return ProfileEdit();
+                                  }));
+                                },
                                 child: Image.asset(
                                   'assets/img/2.png',
                                   height: 80,
@@ -228,7 +211,10 @@ class _HomePasienState extends State<HomePasien> {
                           ),
                           TextButton(
                               onPressed: () {
-                                //action
+                                Navigator.pushReplacement(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return ChooseType();
+                                }));
                               },
                               child: Text("View More",
                                   style: TextStyle(
@@ -244,10 +230,10 @@ class _HomePasienState extends State<HomePasien> {
                         children: [
                           FlatButton(
                               onPressed: () {
-                                Navigator.pushReplacement(context,
-                                    MaterialPageRoute(builder: (context) {
-                                  return ChooseEye();
-                                }));
+                                // Navigator.pushReplacement(context,
+                                //     MaterialPageRoute(builder: (context) {
+                                //   return ChooseEye();
+                                // }));
                               },
                               child: Image.asset(
                                 'assets/img/a.png',
@@ -281,33 +267,6 @@ class _HomePasienState extends State<HomePasien> {
             ),
           ),
         ),
-      ),
-
-      //membuat bottom navigation
-      bottomNavigationBar: BottomNavigationBar(
-        //membuat item navigasi
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.newspaper), label: 'Article'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.visibility), label: 'Eye Test'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_month), label: 'History'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Account'),
-        ],
-
-        //currentindex mengikuti baris item bottom navigasi yang diklik
-        currentIndex: _currentIndex,
-
-        //warna saat item diklik
-        selectedItemColor: Colors.blue,
-
-        //metode yang dijalankan saat ditap
-        onTap: _changeSelectedNavBar,
-
-        //agar bottom navigation tidak bergerak saat diklik
-        type: BottomNavigationBarType.fixed,
       ),
     );
   }

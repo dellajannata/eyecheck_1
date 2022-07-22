@@ -1,3 +1,9 @@
+import 'package:eyecheck_1/MyHeaderDrawer.dart';
+import 'package:eyecheck_1/artikel.dart';
+import 'package:eyecheck_1/choosetype.dart';
+import 'package:eyecheck_1/halamanutama.dart';
+import 'package:eyecheck_1/profileedit2.dart';
+import 'package:eyecheck_1/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:eyecheck_1/ChooseDataDiri.dart';
 
@@ -9,77 +15,24 @@ class ProfileEdit extends StatefulWidget {
 }
 
 class _ProfileEditState extends State<ProfileEdit> {
-  //inisialisasi variabel
-  int _currentIndex = 0;
-  String _currentMenu = 'Account';
-  bool isChecked = false;
-
-  //metod ini akan dijalankna saat diklik
-  void _changeSelectedNavBar(int index) {
-    setState(() {
-      _currentIndex = index;
-
-      if (index == 0) {
-        _currentMenu = 'Home';
-      } else if (index == 1) {
-        _currentMenu = 'Article';
-      } else if (index == 2) {
-        _currentMenu = 'Eye Test';
-      } else if (index == 3) {
-        _currentMenu = 'History';
-      } else if (index == 4) {
-        _currentMenu = 'Account';
-      }
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text("Bottom Navigation"),
-      // ),
-      // body: Center(
-      //   child: Column(
-      //     mainAxisAlignment: MainAxisAlignment.center,
-      //     crossAxisAlignment: CrossAxisAlignment.start,
-      //     children: [
-      //       // HomePasien(),
-      //       Text(
-      //         "Menu yang Aktif",
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //       SizedBox(height: 5,),
-      //       Text(
-      //         "Index: "+_currentIndex.toString(),
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //       SizedBox(height: 5,),
-      //       Text(
-      //         "Menu: "+_currentMenu,
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //     ],
-      //   ),
-      // ),
-      resizeToAvoidBottomInset: false,
-      // resizeToAvoidBottomPadding: false,
-      backgroundColor: Colors.white,
       appBar: AppBar(
-        elevation: 0,
-        brightness: Brightness.light,
-        backgroundColor: Colors.white,
-        leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(
-              Icons.arrow_back_ios,
-              size: 20,
-              color: Colors.black,
-            )),
-      ),
-
+          backgroundColor: Colors.blue,
+          title: const Text("Eye Check"),
+          leading: IconButton(
+              onPressed: () {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) {
+                  return HomePasien();
+                }));
+              },
+              icon: Icon(
+                Icons.arrow_back_ios,
+                size: 20,
+                color: Colors.black,
+              ))),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
@@ -90,6 +43,9 @@ class _ProfileEditState extends State<ProfileEdit> {
               children: [
                 Column(
                   children: [
+                    SizedBox(
+                      height: 40,
+                    ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -265,7 +221,12 @@ class _ProfileEditState extends State<ProfileEdit> {
                             width: 300,
                             height: 30,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushReplacement(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return ProfileEdit2();
+                                }));
+                              },
                               child: const Text(
                                 'Update',
                                 style: TextStyle(fontSize: 20),
@@ -282,7 +243,12 @@ class _ProfileEditState extends State<ProfileEdit> {
                             width: 300,
                             height: 30,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushReplacement(context,
+                                    MaterialPageRoute(builder: (context) {
+                                  return SignIn();
+                                }));
+                              },
                               child: const Text(
                                 'Log Out',
                                 style: TextStyle(fontSize: 20),
@@ -298,33 +264,6 @@ class _ProfileEditState extends State<ProfileEdit> {
             ),
           ),
         ),
-      ),
-
-      //membuat bottom navigation
-      bottomNavigationBar: BottomNavigationBar(
-        //membuat item navigasi
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.newspaper), label: 'Article'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.visibility), label: 'Eye Test'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_month), label: 'History'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Account'),
-        ],
-
-        //currentindex mengikuti baris item bottom navigasi yang diklik
-        currentIndex: _currentIndex,
-
-        //warna saat item diklik
-        selectedItemColor: Colors.blue,
-
-        //metode yang dijalankan saat ditap
-        onTap: _changeSelectedNavBar,
-
-        //agar bottom navigation tidak bergerak saat diklik
-        type: BottomNavigationBarType.fixed,
       ),
     );
   }

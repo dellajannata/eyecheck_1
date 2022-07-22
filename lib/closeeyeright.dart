@@ -12,6 +12,8 @@ class _CloseEyeRightState extends State<CloseEyeRight> {
   @override
   Widget build(BuildContext Context) {
     return Scaffold(
+      appBar:
+          AppBar(backgroundColor: Colors.blue, title: const Text("Eye Check")),
       backgroundColor: Color.fromARGB(255, 24, 120, 245),
       body: Center(
         child: Column(

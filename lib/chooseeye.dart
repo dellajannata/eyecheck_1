@@ -1,7 +1,6 @@
 import 'package:eyecheck_1/chooseeyeleft.dart';
 import 'package:eyecheck_1/chooseeyeright.dart';
-import 'package:eyecheck_1/distance1.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:eyecheck_1/halamanutama.dart';
 import 'package:flutter/material.Dart';
 import 'dart:async';
 
@@ -20,7 +19,20 @@ class _ChooseEyeState extends State<ChooseEye> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.blue, title: const Text("Eye Check")),
+            backgroundColor: Colors.blue,
+            title: const Text("Eye Check"),
+            leading: IconButton(
+                onPressed: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) {
+                    return HomePasien();
+                  }));
+                },
+                icon: Icon(
+                  Icons.arrow_back_ios,
+                  size: 20,
+                  color: Colors.black,
+                ))),
         body: Center(
           child: Column(
             children: <Widget>[
