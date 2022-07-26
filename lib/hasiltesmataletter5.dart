@@ -35,7 +35,7 @@ class _HasilTestMataLetter5State extends State<HasilTestMataLetter5> {
                         ),
                     child: const Text(
                       'P',
-                      style: TextStyle(fontSize: 4.2, color: Colors.black),
+                      style: TextStyle(fontSize: 30, color: Colors.black),
                     ),
                   ),
                 ),

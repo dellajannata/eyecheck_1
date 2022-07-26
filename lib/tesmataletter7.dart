@@ -40,7 +40,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'F',
-                        style: TextStyle(fontSize: 2.1, color: Colors.black),
+                        style: TextStyle(fontSize: 2.83, color: Colors.black),
                       ),
                     ),
                   ),
@@ -68,7 +68,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'E',
-                        style: TextStyle(fontSize: 2.1, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
@@ -90,7 +90,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'F',
-                        style: TextStyle(fontSize: 2.1, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
@@ -118,7 +118,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'L',
-                        style: TextStyle(fontSize: 2.1, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
@@ -140,7 +140,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'T',
-                        style: TextStyle(fontSize: 2.1, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),

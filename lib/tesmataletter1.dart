@@ -43,7 +43,7 @@ class _TestMataLetter1State extends State<TestMataLetter1> {
                           ),
                       child: const Text(
                         'E',
-                        style: TextStyle(fontSize: 20.5, color: Colors.black),
+                        style: TextStyle(fontSize: 27.4, color: Colors.black),
                       ),
                     ),
                   ),
@@ -71,7 +71,7 @@ class _TestMataLetter1State extends State<TestMataLetter1> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'E',
-                        style: TextStyle(fontSize: 20.5, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
@@ -93,7 +93,7 @@ class _TestMataLetter1State extends State<TestMataLetter1> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'P',
-                        style: TextStyle(fontSize: 20.5, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
@@ -121,7 +121,7 @@ class _TestMataLetter1State extends State<TestMataLetter1> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'F',
-                        style: TextStyle(fontSize: 20.5, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
@@ -143,7 +143,7 @@ class _TestMataLetter1State extends State<TestMataLetter1> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'B',
-                        style: TextStyle(fontSize: 20.5, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),

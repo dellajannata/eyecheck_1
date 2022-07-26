@@ -48,7 +48,7 @@ class _AlreadySignedUpState extends State<AlreadySignedUp> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return Gender();
+                          return SignIn();
                         }));
                       },
                       child: const Text(
@@ -70,7 +70,7 @@ class _AlreadySignedUpState extends State<AlreadySignedUp> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return SignIn();
+                          return Gender();
                         }));
                       },
                       child: const Text(

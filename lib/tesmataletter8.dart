@@ -40,7 +40,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'D',
-                        style: TextStyle(fontSize: 1.7, color: Colors.black),
+                        style: TextStyle(fontSize: 2.36, color: Colors.black),
                       ),
                     ),
                   ),
@@ -68,7 +68,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'P',
-                        style: TextStyle(fontSize: 1.7, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
@@ -90,7 +90,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'D',
-                        style: TextStyle(fontSize: 1.7, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
@@ -118,7 +118,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'O',
-                        style: TextStyle(fontSize: 1.7, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
@@ -140,7 +140,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                           primary: Colors.white, onPrimary: Colors.black),
                       child: const Text(
                         'C',
-                        style: TextStyle(fontSize: 1.7, color: Colors.black),
+                        style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
                   ),
