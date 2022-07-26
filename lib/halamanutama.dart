@@ -1,6 +1,7 @@
 import 'package:eyecheck_1/artikel.dart';
 import 'package:eyecheck_1/chooseeye.dart';
 import 'package:eyecheck_1/choosetype.dart';
+import 'package:eyecheck_1/historyright.dart';
 import 'package:eyecheck_1/profileedit.dart';
 import 'package:eyecheck_1/signin.dart';
 import 'package:flutter/material.dart';
@@ -60,7 +61,7 @@ class _HomePasienState extends State<HomePasien> {
             onTap: () {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) {
-                return HomePasien();
+                return HistoryRight();
               }));
             },
           ),
