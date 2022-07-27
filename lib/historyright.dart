@@ -84,7 +84,7 @@ class _HistoryRightState extends State<HistoryRight> {
               SizedBox(height: 80),
               Image.asset(
                 'assets/img/h2.png',
-                height: 500,
+                height: 300,
               ),
             ],
           ),

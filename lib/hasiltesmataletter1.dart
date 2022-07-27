@@ -30,9 +30,9 @@ class _HasilTestMataLetter1State extends State<HasilTestMataLetter1> {
                   height: 100,
                   child: ElevatedButton(
                     onPressed: () {},
-                    style: ElevatedButton.styleFrom(primary: Colors.blue
-                        // side: BorderSide(width:4,color: Colors.black)
-                        ),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.blue,
+                    ),
                     child: const Text(
                       'E',
                       style: TextStyle(fontSize: 30, color: Colors.black),

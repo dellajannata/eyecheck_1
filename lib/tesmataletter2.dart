@@ -37,7 +37,11 @@ class _TestMataLetter2State extends State<TestMataLetter2> {
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.white, onPrimary: Colors.black),
+                          primary: Colors.white,
+                          shape: CircleBorder(),
+                          padding: EdgeInsets.all(24),
+                          onPrimary: Colors.black,
+                          side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
                         'F',
                         style: TextStyle(fontSize: 14.7, color: Colors.black),
@@ -65,7 +69,11 @@ class _TestMataLetter2State extends State<TestMataLetter2> {
                         }));
                       },
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.white, onPrimary: Colors.black),
+                          primary: Colors.white,
+                          shape: CircleBorder(),
+                          padding: EdgeInsets.all(24),
+                          onPrimary: Colors.black,
+                          side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
                         'E',
                         style: TextStyle(fontSize: 30, color: Colors.black),
@@ -87,7 +95,11 @@ class _TestMataLetter2State extends State<TestMataLetter2> {
                         }));
                       },
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.white, onPrimary: Colors.black),
+                          primary: Colors.white,
+                          shape: CircleBorder(),
+                          padding: EdgeInsets.all(24),
+                          onPrimary: Colors.black,
+                          side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
                         'P',
                         style: TextStyle(fontSize: 30, color: Colors.black),
@@ -115,7 +127,11 @@ class _TestMataLetter2State extends State<TestMataLetter2> {
                         }));
                       },
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.white, onPrimary: Colors.black),
+                          primary: Colors.white,
+                          shape: CircleBorder(),
+                          padding: EdgeInsets.all(24),
+                          onPrimary: Colors.black,
+                          side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
                         'F',
                         style: TextStyle(fontSize: 30, color: Colors.black),
@@ -137,7 +153,11 @@ class _TestMataLetter2State extends State<TestMataLetter2> {
                         }));
                       },
                       style: ElevatedButton.styleFrom(
-                          primary: Colors.white, onPrimary: Colors.black),
+                          primary: Colors.white,
+                          shape: CircleBorder(),
+                          padding: EdgeInsets.all(24),
+                          onPrimary: Colors.black,
+                          side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
                         'B',
                         style: TextStyle(fontSize: 30, color: Colors.black),
