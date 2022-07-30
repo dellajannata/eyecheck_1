@@ -1,7 +1,5 @@
 import 'package:eyecheck_1/tesmataletter3b.dart';
-import 'package:eyecheck_1/tesmataletter4.dart';
 import 'package:eyecheck_1/testresult2.dart';
-import 'package:eyecheck_1/testresult3.dart';
 import 'package:flutter/material.Dart';
 
 class TestMataLetter3a extends StatefulWidget {

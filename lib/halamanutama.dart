@@ -3,9 +3,7 @@ import 'package:eyecheck_1/chooseeye.dart';
 import 'package:eyecheck_1/choosetype.dart';
 import 'package:eyecheck_1/historyright.dart';
 import 'package:eyecheck_1/profileedit.dart';
-import 'package:eyecheck_1/signin.dart';
 import 'package:flutter/material.dart';
-import 'package:eyecheck_1/ChooseDataDiri.dart';
 import 'package:eyecheck_1/MyHeaderDrawer.dart';
 
 class HomePasien extends StatefulWidget {

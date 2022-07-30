@@ -1,5 +1,3 @@
-// ignore_for_file: empty_statements
-
 import 'package:eyecheck_1/halamanutama.dart';
 import 'package:flutter/material.dart';
 
@@ -34,14 +32,6 @@ class _SignInState extends State<SignIn> {
           const SizedBox(
             height: 20,
           ),
-          const Text(
-            'Create Your Account',
-            style: TextStyle(
-                fontSize: 20,
-                color: Colors.blue,
-                fontWeight: FontWeight.bold,
-                fontFamily: " CabalBold"),
-          ),
           const SizedBox(
             height: 100,
           ),
@@ -51,7 +41,7 @@ class _SignInState extends State<SignIn> {
               focusedBorder: const OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.blue),
               ),
-              hintText: "Masukkan E-mail",
+              hintText: "E-mail",
               hintStyle: const TextStyle(color: Colors.black),
               labelText: "E-mail",
               labelStyle: const TextStyle(color: Colors.black),
@@ -67,7 +57,7 @@ class _SignInState extends State<SignIn> {
               focusedBorder: const OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.blue),
               ),
-              hintText: "Masukkan Password",
+              hintText: "Password",
               hintStyle: const TextStyle(color: Colors.black),
               labelText: "Password",
               labelStyle: const TextStyle(color: Colors.black),

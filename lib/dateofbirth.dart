@@ -53,7 +53,7 @@ class _DateOfBirthState extends State<DateOfBirth> {
                 focusedBorder: const OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.blue),
                 ),
-                hintText: "Masukkan Tanggal Lahir",
+                hintText: "Date Of Bitrh",
                 hintStyle: const TextStyle(color: Colors.black),
                 labelText: "Date Of Bitrh",
                 labelStyle: const TextStyle(color: Colors.black),

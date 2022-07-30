@@ -1,5 +1,4 @@
 import 'package:eyecheck_1/halamanutama.dart';
-import 'package:eyecheck_1/profileedit.dart';
 import 'package:flutter/material.dart';
 
 class Artikel extends StatefulWidget {

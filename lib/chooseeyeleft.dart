@@ -1,5 +1,4 @@
 import 'package:eyecheck_1/distance1.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.Dart';
 import 'dart:async';
 
@@ -32,13 +31,13 @@ class _ChooseEyeLeftState extends State<ChooseEyeLeft> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: SizedBox(
-                      width: 130,
+                      width: 150,
                       height: 50,
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(primary: Colors.white),
                         child: const Text(
-                          'Right',
+                          'Right Eye',
                           style: TextStyle(fontSize: 24, color: Colors.black),
                         ),
                       ),
@@ -48,12 +47,12 @@ class _ChooseEyeLeftState extends State<ChooseEyeLeft> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: SizedBox(
-                      width: 130,
+                      width: 150,
                       height: 50,
                       child: ElevatedButton(
                         onPressed: () {},
                         child: const Text(
-                          'Left',
+                          'Left Eye',
                           style: TextStyle(fontSize: 24),
                         ),
                       ),

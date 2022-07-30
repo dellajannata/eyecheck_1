@@ -119,13 +119,13 @@ class _ChooseTypeState extends State<ChooseType> {
                   children: [
                     Image.asset(
                       'assets/img/c.png',
-                      height: 200,
+                      height: 100,
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     const Text(
-                      'People Work',
+                      'E Chart',
                       style: TextStyle(
                           fontSize: 15,
                           color: Colors.black,
@@ -148,13 +148,13 @@ class _ChooseTypeState extends State<ChooseType> {
                   children: [
                     Image.asset(
                       'assets/img/d.png',
-                      height: 200,
+                      height: 100,
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     const Text(
-                      'Scenery',
+                      'Cincin Landolt',
                       style: TextStyle(
                           fontSize: 15,
                           color: Colors.black,

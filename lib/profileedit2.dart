@@ -1,10 +1,5 @@
-import 'package:eyecheck_1/MyHeaderDrawer.dart';
-import 'package:eyecheck_1/artikel.dart';
-import 'package:eyecheck_1/choosetype.dart';
-import 'package:eyecheck_1/halamanutama.dart';
 import 'package:eyecheck_1/profileedit.dart';
 import 'package:flutter/material.dart';
-import 'package:eyecheck_1/ChooseDataDiri.dart';
 
 class ProfileEdit2 extends StatefulWidget {
   const ProfileEdit2({Key? key}) : super(key: key);

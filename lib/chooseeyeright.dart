@@ -32,13 +32,13 @@ class _ChooseEyeRightState extends State<ChooseEyeRight> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: SizedBox(
-                      width: 130,
+                      width: 150,
                       height: 50,
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(primary: Colors.blue),
                         child: const Text(
-                          'Right',
+                          'Right Eye',
                           style: TextStyle(fontSize: 24, color: Colors.black),
                         ),
                       ),
@@ -48,13 +48,13 @@ class _ChooseEyeRightState extends State<ChooseEyeRight> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: SizedBox(
-                      width: 130,
+                      width: 150,
                       height: 50,
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(primary: Colors.white),
                         child: const Text(
-                          'Left',
+                          'Left Eye',
                           style: TextStyle(fontSize: 24, color: Colors.black),
                         ),
                       ),

@@ -45,14 +45,14 @@ class _HistoryRightState extends State<HistoryRight> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: SizedBox(
-                      width: 130,
-                      height: 50,
+                      width: 110,
+                      height: 40,
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(primary: Colors.blue),
                         child: const Text(
-                          'Right',
-                          style: TextStyle(fontSize: 24, color: Colors.black),
+                          'Right Eye',
+                          style: TextStyle(fontSize: 18, color: Colors.black),
                         ),
                       ),
                     ),
@@ -61,8 +61,8 @@ class _HistoryRightState extends State<HistoryRight> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: SizedBox(
-                      width: 130,
-                      height: 50,
+                      width: 110,
+                      height: 40,
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.pushReplacement(context,
@@ -73,8 +73,8 @@ class _HistoryRightState extends State<HistoryRight> {
                         style: ElevatedButton.styleFrom(
                             primary: Colors.white, onPrimary: Colors.blue),
                         child: const Text(
-                          'Left',
-                          style: TextStyle(fontSize: 24, color: Colors.black),
+                          'Left Eye',
+                          style: TextStyle(fontSize: 18, color: Colors.black),
                         ),
                       ),
                     ),
@@ -84,7 +84,7 @@ class _HistoryRightState extends State<HistoryRight> {
               SizedBox(height: 80),
               Image.asset(
                 'assets/img/h2.png',
-                height: 300,
+                height: 500,
               ),
             ],
           ),

@@ -1,5 +1,4 @@
 import 'package:eyecheck_1/dateofbirth.dart';
-import 'package:eyecheck_1/halamanutama.dart';
 import 'package:eyecheck_1/signin.dart';
 import 'package:flutter/material.dart';
 
@@ -99,7 +98,7 @@ class _SignupPageState extends State<SignupPage> {
                               focusedBorder: const OutlineInputBorder(
                                 borderSide: BorderSide(color: Colors.blue),
                               ),
-                              hintText: "Masukkan Username",
+                              hintText: "Username",
                               hintStyle: const TextStyle(color: Colors.black),
                               labelText: "Username",
                               labelStyle: const TextStyle(color: Colors.black),
@@ -114,7 +113,7 @@ class _SignupPageState extends State<SignupPage> {
                               focusedBorder: const OutlineInputBorder(
                                 borderSide: BorderSide(color: Colors.blue),
                               ),
-                              hintText: "Masukkan E-mail",
+                              hintText: "E-mail",
                               hintStyle: const TextStyle(color: Colors.black),
                               labelText: "E-mail",
                               labelStyle: const TextStyle(color: Colors.black),
@@ -130,7 +129,7 @@ class _SignupPageState extends State<SignupPage> {
                               focusedBorder: const OutlineInputBorder(
                                 borderSide: BorderSide(color: Colors.blue),
                               ),
-                              hintText: "Masukkan Password",
+                              hintText: "Password",
                               hintStyle: const TextStyle(color: Colors.black),
                               labelText: "Password",
                               labelStyle: const TextStyle(color: Colors.black),
