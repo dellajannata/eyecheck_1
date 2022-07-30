@@ -35,13 +35,6 @@ class _TestResult1State extends State<TestResult1> {
               height: 200,
             ),
             const SizedBox(
-              height: 40,
-            ),
-            Image.asset(
-              'assets/img/t12.png',
-              height: 200,
-            ),
-            const SizedBox(
               height: 80,
             ),
             ClipRRect(

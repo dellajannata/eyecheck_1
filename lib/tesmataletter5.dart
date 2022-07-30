@@ -1,4 +1,5 @@
-import 'package:eyecheck_1/hasiltesmataletter5.dart';
+import 'package:eyecheck_1/tesmataletter5a.dart';
+import 'package:eyecheck_1/testresult3.dart';
 import 'package:eyecheck_1/testresult5.dart';
 import 'package:flutter/material.Dart';
 
@@ -65,7 +66,7 @@ class _TestMataLetter5State extends State<TestMataLetter5> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult5();
+                          return TestResult3();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -91,7 +92,7 @@ class _TestMataLetter5State extends State<TestMataLetter5> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return HasilTestMataLetter5();
+                          return TestMataLetter5a();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -123,7 +124,7 @@ class _TestMataLetter5State extends State<TestMataLetter5> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult5();
+                          return TestResult3();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -149,7 +150,7 @@ class _TestMataLetter5State extends State<TestMataLetter5> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult5();
+                          return TestResult3();
                         }));
                       },
                       style: ElevatedButton.styleFrom(

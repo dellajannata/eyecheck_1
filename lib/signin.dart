@@ -127,7 +127,7 @@ class _SignInState extends State<SignIn> {
           ),
           const Text(
             // textAlign: TextAlign.right,
-            '________   Or Sign Up With   ________',
+            '________   Or Sign Up  ________',
             style: TextStyle(
                 fontSize: 15,
                 color: Colors.blue,
@@ -137,24 +137,24 @@ class _SignInState extends State<SignIn> {
           SizedBox(
             height: 20,
           ),
-          Center(
-            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.asset(
-                  'assets/img/google.png',
-                  height: 100,
-                ),
-              ),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.asset(
-                  'assets/img/facebook.png',
-                  height: 100,
-                ),
-              ),
-            ]),
-          ),
+          // Center(
+          //   child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          //     ClipRRect(
+          //       borderRadius: BorderRadius.circular(12),
+          //       child: Image.asset(
+          //         'assets/img/google.png',
+          //         height: 100,
+          //       ),
+          //     ),
+          //     ClipRRect(
+          //       borderRadius: BorderRadius.circular(12),
+          //       child: Image.asset(
+          //         'assets/img/facebook.png',
+          //         height: 100,
+          //       ),
+          //     ),
+          //   ]),
+          // ),
         ]),
       ),
     );

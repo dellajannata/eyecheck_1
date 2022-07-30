@@ -1,17 +1,16 @@
-import 'package:eyecheck_1/tesmataletter7a.dart';
+import 'package:eyecheck_1/tesmataletter7b.dart';
 import 'package:eyecheck_1/testresult5.dart';
-import 'package:eyecheck_1/testresult7.dart';
 import 'package:flutter/material.Dart';
 
-class TestMataLetter7 extends StatefulWidget {
-  const TestMataLetter7({Key? key}) : super(key: key);
+class TestMataLetter7a extends StatefulWidget {
+  const TestMataLetter7a({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _TestMataLetter7State createState() => _TestMataLetter7State();
+  _TestMataLetter7aState createState() => _TestMataLetter7aState();
 }
 
-class _TestMataLetter7State extends State<TestMataLetter7> {
+class _TestMataLetter7aState extends State<TestMataLetter7a> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +43,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'F',
+                        'E',
                         style: TextStyle(fontSize: 2.83, color: Colors.black),
                       ),
                     ),
@@ -66,7 +65,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult5();
+                          return TestMataLetter7b();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -92,7 +91,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestMataLetter7a();
+                          return TestResult5();
                         }));
                       },
                       style: ElevatedButton.styleFrom(

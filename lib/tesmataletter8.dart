@@ -1,5 +1,6 @@
-import 'package:eyecheck_1/hasiltesmataletter8.dart';
-import 'package:eyecheck_1/testresult8.dart';
+import 'package:eyecheck_1/tesmataletter8a.dart';
+import 'package:eyecheck_1/testresult6.dart';
+
 import 'package:flutter/material.Dart';
 
 class TestMataLetter8 extends StatefulWidget {
@@ -65,7 +66,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult8();
+                          return TestMataLetter8a();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -75,7 +76,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'P',
+                        'D',
                         style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
@@ -91,7 +92,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return HasilTestMataLetter8();
+                          return TestResult6();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -101,7 +102,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'D',
+                        'B',
                         style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
@@ -123,7 +124,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult8();
+                          return TestResult6();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -149,7 +150,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult8();
+                          return TestResult6();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -159,7 +160,7 @@ class _TestMataLetter8State extends State<TestMataLetter8> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'C',
+                        'P',
                         style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),

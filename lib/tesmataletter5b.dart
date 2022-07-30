@@ -1,17 +1,17 @@
-import 'package:eyecheck_1/tesmataletter7a.dart';
+import 'package:eyecheck_1/tesmataletter5c.dart';
+import 'package:eyecheck_1/testresult3.dart';
 import 'package:eyecheck_1/testresult5.dart';
-import 'package:eyecheck_1/testresult7.dart';
 import 'package:flutter/material.Dart';
 
-class TestMataLetter7 extends StatefulWidget {
-  const TestMataLetter7({Key? key}) : super(key: key);
+class TestMataLetter5b extends StatefulWidget {
+  const TestMataLetter5b({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _TestMataLetter7State createState() => _TestMataLetter7State();
+  _TestMataLetter5bState createState() => _TestMataLetter5bState();
 }
 
-class _TestMataLetter7State extends State<TestMataLetter7> {
+class _TestMataLetter5bState extends State<TestMataLetter5b> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,8 +44,8 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'F',
-                        style: TextStyle(fontSize: 2.83, color: Colors.black),
+                        'C',
+                        style: TextStyle(fontSize: 5.669, color: Colors.black),
                       ),
                     ),
                   ),
@@ -66,7 +66,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult5();
+                          return TestResult3();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -92,7 +92,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestMataLetter7a();
+                          return TestResult3();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -102,7 +102,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'F',
+                        'P',
                         style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
@@ -124,7 +124,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult5();
+                          return TestResult3();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -150,7 +150,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult5();
+                          return TestMataLetter5c();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -160,7 +160,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'T',
+                        'C',
                         style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),

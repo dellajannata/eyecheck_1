@@ -1,5 +1,5 @@
-import 'package:eyecheck_1/hasiltesmataletter3.dart';
-import 'package:eyecheck_1/testresult3.dart';
+import 'package:eyecheck_1/tesmataletter3a.dart';
+import 'package:eyecheck_1/testresult2.dart';
 import 'package:flutter/material.Dart';
 
 class TestMataLetter3 extends StatefulWidget {
@@ -65,7 +65,7 @@ class _TestMataLetter3State extends State<TestMataLetter3> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult3();
+                          return TestResult2();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -91,7 +91,7 @@ class _TestMataLetter3State extends State<TestMataLetter3> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult3();
+                          return TestResult2();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -123,7 +123,7 @@ class _TestMataLetter3State extends State<TestMataLetter3> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult3();
+                          return TestResult2();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -149,7 +149,7 @@ class _TestMataLetter3State extends State<TestMataLetter3> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return HasilTestMataLetter3();
+                          return TestMataLetter3a();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -165,7 +165,6 @@ class _TestMataLetter3State extends State<TestMataLetter3> {
                     ),
                   ),
                 ),
-                SizedBox(height: 150),
               ]),
             ),
           ]),

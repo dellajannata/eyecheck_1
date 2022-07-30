@@ -1,4 +1,4 @@
-import 'package:eyecheck_1/hasiltesmataletter2.dart';
+import 'package:eyecheck_1/tesmataletter3.dart';
 import 'package:eyecheck_1/testresult2.dart';
 import 'package:flutter/material.Dart';
 
@@ -123,7 +123,7 @@ class _TestMataLetter2State extends State<TestMataLetter2> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return HasilTestMataLetter2();
+                          return TestMataLetter3();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -165,10 +165,8 @@ class _TestMataLetter2State extends State<TestMataLetter2> {
                     ),
                   ),
                 ),
-                SizedBox(height: 150),
               ]),
             ),
-            SizedBox(height: 60),
           ]),
         ));
   }

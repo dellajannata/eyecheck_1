@@ -1,17 +1,17 @@
-import 'package:eyecheck_1/tesmataletter7a.dart';
+import 'package:eyecheck_1/tesmataletter7d.dart';
 import 'package:eyecheck_1/testresult5.dart';
 import 'package:eyecheck_1/testresult7.dart';
 import 'package:flutter/material.Dart';
 
-class TestMataLetter7 extends StatefulWidget {
-  const TestMataLetter7({Key? key}) : super(key: key);
+class TestMataLetter7c extends StatefulWidget {
+  const TestMataLetter7c({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _TestMataLetter7State createState() => _TestMataLetter7State();
+  _TestMataLetter7cState createState() => _TestMataLetter7cState();
 }
 
-class _TestMataLetter7State extends State<TestMataLetter7> {
+class _TestMataLetter7cState extends State<TestMataLetter7c> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +44,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'F',
+                        'O',
                         style: TextStyle(fontSize: 2.83, color: Colors.black),
                       ),
                     ),
@@ -76,7 +76,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'E',
+                        'G',
                         style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
@@ -92,7 +92,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestMataLetter7a();
+                          return TestResult5();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -102,7 +102,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'F',
+                        'C',
                         style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
@@ -134,7 +134,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'L',
+                        'C',
                         style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),
@@ -150,7 +150,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult5();
+                          return TestMataLetter7d();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -160,7 +160,7 @@ class _TestMataLetter7State extends State<TestMataLetter7> {
                           onPrimary: Colors.black,
                           side: BorderSide(width: 4, color: Colors.black)),
                       child: const Text(
-                        'T',
+                        'O',
                         style: TextStyle(fontSize: 30, color: Colors.black),
                       ),
                     ),

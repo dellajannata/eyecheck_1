@@ -1,4 +1,6 @@
-import 'package:eyecheck_1/hasiltesmataletter6.dart';
+import 'package:eyecheck_1/tesmataletter6a.dart';
+import 'package:eyecheck_1/tesmataletter6e.dart';
+import 'package:eyecheck_1/testresult4.dart';
 import 'package:eyecheck_1/testresult6.dart';
 import 'package:flutter/material.Dart';
 
@@ -65,7 +67,7 @@ class _TestMataLetter6State extends State<TestMataLetter6> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return HasilTestMataLetter6();
+                          return TestMataLetter6a();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -91,7 +93,7 @@ class _TestMataLetter6State extends State<TestMataLetter6> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult6();
+                          return TestResult4();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -123,7 +125,7 @@ class _TestMataLetter6State extends State<TestMataLetter6> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult6();
+                          return TestResult4();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
@@ -149,7 +151,7 @@ class _TestMataLetter6State extends State<TestMataLetter6> {
                       onPressed: () {
                         Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) {
-                          return TestResult6();
+                          return TestResult4();
                         }));
                       },
                       style: ElevatedButton.styleFrom(
